@@ -1,7 +1,7 @@
 "use client";
 import { projects, timeline } from '@/app/lib/data';
 import { motion } from 'framer-motion';
-import { Code, Layers, Share2 } from 'lucide-react';
+import { Brain, CircuitBoard, Code, Container, Layers, Microscope } from 'lucide-react';
 import Link from 'next/link';
 import { SiGithub, SiLinkedin } from 'react-icons/si';
 
@@ -14,21 +14,31 @@ const skills = [
   {
     icon: <Code className="w-6 h-6 text-accent" />,
     title: 'Web & Full-Stack Engineering',
-    description: 'Building modern applications using TypeScript, Java, and Node.',
+    description: 'Building modern applications using TypeScript, Java, and Node. Hosting on-prem and cloud platforms.',
   },
   {
-    icon: <Share2 className="w-6 h-6 text-accent" />,
+    icon: <CircuitBoard className="w-6 h-6 text-accent" />,
     title: 'Mechanical Build & Integration',
     description: 'Hands-on experience as a mechanical technologist build lead, coordinating and executing complex builds.',
   },
   {
-    icon: <svg className="w-6 h-6 text-accent" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 7h10v10H7z"/></svg>,
+    icon: <Container className="w-6 h-6 text-accent" />,
     title: 'DevOps & Docker',
     description: 'Implementing CI/CD pipelines, containerization, and cloud deployments for scalable, reliable systems.',
   },
+  {
+    icon: <Brain className="w-6 h-6 text-accent" />,
+    title: 'Process Improvement & AI',
+    description: 'Driving efficiency through smart tooling, creative solutions, and leveraging modern frameworks and AI to push projects and teams forward.',
+  },
+  {
+    icon: <Microscope className="w-6 h-6 text-accent" />,
+    title: 'Research & Development',
+    description: 'Innovating through R&D, prototyping new solutions, and exploring emerging technologies to solve complex problems.',
+  },
 ];
 
-const featuredProjects = projects.slice(0, 2);
+const featuredProjects = projects.slice(0, 3);
 
 const timelinePreview = timeline.slice(0, 2);
 
