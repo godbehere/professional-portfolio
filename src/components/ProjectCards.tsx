@@ -2,30 +2,7 @@
 import { ExternalLink } from 'lucide-react';
 import { SiGithub } from 'react-icons/si';
 import { motion } from 'framer-motion';
-
-const projects = [
-    {
-        title: "Organ-AI-zer",
-        description: "AI-powered file organization tool that uses AI to categorize and sort files.",
-        github: "https://github.com/godbehere/organ-ai-zer",
-        demo: "https://www.npmjs.com/package/organ-ai-zer",
-        tech: ["TypeScript", "Anthropic API", "OpenAi API"],
-    },
-    {
-        title: "Photography Booking Site",
-        description: "Custom-built portfolio and client booking system.",
-        github: "https://github.com/godbehere/photo-portfolio",
-        demo: "https://photography.lostlight.ca",
-        tech: ["Next.js", "Tailwind CSS", "Firebase"],
-    },
-    {
-        title: "Professional Portfolio",
-        description: "Modern, responsive portfolio site showcasing my projects and skills.",
-        github: "https://github.com/godbehere/professional-portfolio",
-        demo: "https://portfolio.godbehere.org",
-        tech: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
-    },
-];
+import { projects } from '@/app/lib/data';
 
 export default function ProjectCards() {
   return (
