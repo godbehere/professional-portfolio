@@ -4,7 +4,7 @@ export default function Navbar() {
     return (
         <nav className="bg-gray-100 dark:bg-gray-accent shadow-md">
             <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-            <span className="text-xl font-bold">Grant Godbehere</span>
+            <span className="text-xl font-bold">Software Engineer - Lead Developer</span>
             <div className="space-x-4">
                 <Link href="/">Home</Link>
                 <Link href="/about">About</Link>
