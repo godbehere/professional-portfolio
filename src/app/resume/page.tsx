@@ -17,7 +17,7 @@ export default function ResumePage() {
           href="/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-6 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent/80 transition"
+          className="inline-block px-6 py-3 bg-accent dark:text-white font-semibold rounded-lg hover:bg-accent/80 transition"
         >
           Download PDF
         </a>

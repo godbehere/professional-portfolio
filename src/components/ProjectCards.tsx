@@ -41,7 +41,7 @@ export default function ProjectCards() {
         {projects.map((project, index) => (
           <motion.div
             key={project.title}
-            className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 flex flex-col justify-between hover:shadow-lg transition"
+            className="bg-white dark:bg-gray-accent rounded-xl shadow-md p-6 flex flex-col justify-between hover:shadow-lg transition"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -58,7 +58,7 @@ export default function ProjectCards() {
                 {project.tech.map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-800 dark:text-gray-200"
+                    className="text-xs px-2 py-1 bg-gray-200 dark:bg-red-400 rounded-full text-gray-800 "
                   >
                     {tag}
                   </span>
