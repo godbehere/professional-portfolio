@@ -22,7 +22,7 @@ const projects = [
         title: "Professional Portfolio",
         description: "Modern, responsive portfolio site showcasing my projects and skills.",
         github: "https://github.com/godbehere/professional-portfolio",
-        demo: "https://github.com/godbehere/professional-portfolio",
+        demo: "https://portfolio.godbehere.org",
         tech: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
     },
 ];
