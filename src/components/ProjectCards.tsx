@@ -19,10 +19,10 @@ const projects = [
         tech: ["Next.js", "Tailwind CSS", "Firebase"],
     },
     {
-        title: "Personal Portfolio",
+        title: "Professional Portfolio",
         description: "Modern, responsive portfolio site showcasing my projects and skills.",
-        github: "https://github.com/godbehere/portfolio-site",
-        demo: "https://lostlight.ca",
+        github: "https://github.com/godbehere/professional-portfolio",
+        demo: "https://github.com/godbehere/professional-portfolio",
         tech: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
     },
 ];
