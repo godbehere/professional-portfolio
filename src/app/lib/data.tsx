@@ -61,6 +61,13 @@ export const timeline = [
 
 export const projects = [
     {
+        title: "RAG Project",
+        description: "A Retrieval-Augmented Generation (RAG) backend for document ingestion, semantic search, and LLM-powered question answering.",
+        github: "https://github.com/godbehere/rag-project",
+        demo: "https://github.com/godbehere/rag-project",
+        tech: ["TypeScript", "OpenAi API"],
+    },
+    {
         title: "Organ-AI-zer",
         description: "AI-powered file organization tool that uses AI to categorize and sort files.",
         github: "https://github.com/godbehere/organ-ai-zer",
