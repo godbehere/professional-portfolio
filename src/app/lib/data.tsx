@@ -1,4 +1,7 @@
-import { Briefcase, GraduationCap } from "lucide-react";
+import { BrainCircuit, Briefcase, GraduationCap } from "lucide-react";
+import { HiCommandLine } from "react-icons/hi2";
+import { RiAnthropicFill, RiFirebaseFill } from "react-icons/ri";
+import { SiAxios, SiDocker, SiNodedotjs, SiOpenai, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 export const timeline = [
   {
@@ -65,27 +68,116 @@ export const projects = [
         description: "A Retrieval-Augmented Generation (RAG) backend for document ingestion, semantic search, and LLM-powered question answering.",
         github: "https://github.com/godbehere/rag-project",
         demo: "https://hub.docker.com/r/godbehere/rag-server",
-        tech: ["TypeScript", "OpenAi API", "Natural Language Processing"],
+        // tech: ["TypeScript", "OpenAi API", "Natural Language Processing", "Docker"],
+        tech: [
+          {
+            icon: SiTypescript,
+            label: "TypeScript"
+          },
+          {
+            icon: SiOpenai,
+            label: "OpenAI API"
+          },
+          {
+            icon: BrainCircuit,
+            label: "Natural Language Processing"
+          },
+          {
+            icon: SiDocker,
+            label: "Docker"
+          }
+        ],
+    },
+    {
+        title: "RAGGED CLI",
+        description: "A CLI Application for interacting with RAG Project. Allows users to populate vector store, and perform queries.",
+        github: "https://github.com/godbehere/ragged-cli",
+        demo: "https://www.npmjs.com/package/ragged-cli",
+        // tech: ["TypeScript", "Commander", "Axios", "Node.js"],
+        tech: [
+          {
+            icon: SiTypescript,
+            label: "TypeScript"
+          },
+          {
+            icon: HiCommandLine,
+            label: "Commander"
+          },
+          {
+            icon: SiAxios,
+            label: "Axios"
+          },
+          {
+            icon: SiNodedotjs,
+            label: "Node.js"
+          }
+        ],
     },
     {
         title: "Organ-AI-zer",
         description: "AI-powered file organization tool that uses AI to categorize and sort files.",
         github: "https://github.com/godbehere/organ-ai-zer",
         demo: "https://www.npmjs.com/package/organ-ai-zer",
-        tech: ["TypeScript", "Anthropic API", "OpenAi API"],
+        // tech: ["TypeScript", "Anthropic API", "OpenAi API"],
+        tech: [
+          {
+            icon: SiTypescript,
+            label: "TypeScript"
+          },
+          {
+            icon: RiAnthropicFill,
+            label: "Anthropic API"
+          },
+          {
+            icon: SiOpenai,
+            label: "OpenAI API"
+          }
+        ],
     },
     {
         title: "Photography Booking Site",
         description: "Custom-built portfolio and client booking system.",
         github: "https://github.com/godbehere/photo-portfolio",
         demo: "https://photography.lostlight.ca",
-        tech: ["Next.js", "Tailwind CSS", "Firebase"],
+        // tech: ["Next.js", "Tailwind CSS", "Firebase"],
+        tech: [
+          {
+            icon: SiTypescript,
+            label: "TypeScript"
+          },
+          {
+            icon: SiTailwindcss,
+            label: "Tailwind CSS"
+          },
+          {
+            icon: RiFirebaseFill,
+            label: "Firebase"
+          }
+        ],
     },
     {
         title: "Professional Portfolio",
         description: "Modern, responsive portfolio site showcasing my projects and skills.",
         github: "https://github.com/godbehere/professional-portfolio",
         demo: "https://portfolio.godbehere.org",
-        tech: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+        // tech: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+        tech: [
+          {
+            icon: SiTypescript,
+            label: "TypeScript"
+          },
+          {
+            icon: SiNodedotjs,
+            label: "Node.js"
+          },
+          {
+            icon: SiTailwindcss,
+            label: "Tailwind CSS"
+          },
+          {
+            icon: SiTypescript,
+            label: "TypeScript"
+          }
+        ],
     },
 ];
