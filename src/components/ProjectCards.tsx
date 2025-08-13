@@ -31,13 +31,15 @@ export default function ProjectCards() {
               <p className="text-gray-700 dark:text-gray-300 mb-4">
                 {project.description}
               </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {project.tech.map((tag) => (
+              <div className="flex flex-wrap gap-2 mb-3">
+                {project.tech.map((tag, idx) => (
                   <span
-                    key={tag}
-                    className="text-xs px-2 py-1 bg-gray-200 dark:bg-red-400 rounded-full text-gray-800 "
+                    key={idx}
+                    className="text-2xl px-2 py-1 text-gray-800 dark:text-red-400"
+                    title={tag.label}
+                    style={{ cursor: "default" }}
                   >
-                    {tag}
+                    <tag.icon />
                   </span>
                 ))}
               </div>
