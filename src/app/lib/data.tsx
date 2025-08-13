@@ -64,8 +64,8 @@ export const projects = [
         title: "RAG Project",
         description: "A Retrieval-Augmented Generation (RAG) backend for document ingestion, semantic search, and LLM-powered question answering.",
         github: "https://github.com/godbehere/rag-project",
-        demo: "https://github.com/godbehere/rag-project",
-        tech: ["TypeScript", "OpenAi API"],
+        demo: "https://hub.docker.com/r/godbehere/rag-server",
+        tech: ["TypeScript", "OpenAi API", "Natural Language Processing"],
     },
     {
         title: "Organ-AI-zer",
