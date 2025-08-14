@@ -31,15 +31,17 @@ export default function ProjectCards() {
               <p className="text-gray-700 dark:text-gray-300 mb-4">
                 {project.description}
               </p>
-              <div className="flex flex-wrap gap-2 mb-3">
+              <div className="flex flex-wrap gap-2 mb-3 justify-center">
                 {project.tech.map((tag, idx) => (
                   <span
                     key={idx}
-                    className="text-2xl px-2 py-1 text-gray-800 dark:text-red-400"
+                    className="flex flex-col items-center text-2xl px-2 py-1 text-accent-pop"
                     title={tag.label}
                     style={{ cursor: "default" }}
                   >
                     <tag.icon />
+                    {/* Show label below icon on mobile, hide on desktop */}
+                    <span className="block text-xs mt-1 sm:hidden">{tag.label}</span>
                   </span>
                 ))}
               </div>

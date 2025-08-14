@@ -106,7 +106,7 @@ export default function LandingPage() {
               transition={{ duration: 0.4, delay: idx * 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="mb-4">{item.icon}</div>
+              <div className="mb-4 text-accent-pop">{item.icon}</div>
               <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
               <p className="text-muted text-sm">{item.description}</p>
             </motion.div>
@@ -166,7 +166,7 @@ export default function LandingPage() {
           {timelinePreview.map((entry, idx) => (
             <motion.li
               key={idx}
-              className="border-l-4 border-accent pl-4"
+              className="border-l-4 border-accent-pop pl-4"
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.4, delay: idx * 0.1 }}
