@@ -81,7 +81,7 @@ export const projects = [
           },
           {
             icon: BrainCircuit,
-            label: "Natural Language Processing"
+            label: "NLP"
           },
           {
             icon: SiDocker,
