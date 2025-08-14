@@ -10,8 +10,12 @@ export default function Navbar() {
             <div className="container mx-auto px-4 py-4 flex justify-between items-center">
                 <span className="text-xl font-bold flex items-center gap-2">
                     <HatGlasses className="w-6 h-6" />
-                    <span className="hidden sm:inline">Software Engineer - Lead Developer</span>
-                    <span className="sm:hidden">Lead Dev</span>
+                    <span className="hidden sm:inline">
+                        <Link href="/">Software Engineer - Lead Developer</Link>
+                    </span>
+                    <span className="sm:hidden">
+                        <Link href="/">Lead Dev</Link>
+                    </span>
                 </span>
                 {/* Desktop links */}
                 <div className="space-x-4 hidden sm:flex">
