@@ -1,7 +1,8 @@
 import { BrainCircuit, Briefcase, GraduationCap } from "lucide-react";
 import { HiCommandLine } from "react-icons/hi2";
 import { RiAnthropicFill, RiFirebaseFill } from "react-icons/ri";
-import { SiAxios, SiDocker, SiNodedotjs, SiOpenai, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiAxios, SiDocker, SiNextdotjs, SiNodedotjs, SiNumpy, SiOpenai, SiPython, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SlGraph } from "react-icons/sl";
 
 export const timeline = [
   {
@@ -142,6 +143,14 @@ export const projects = [
         // tech: ["Next.js", "Tailwind CSS", "Firebase"],
         tech: [
           {
+            icon: SiReact,
+            label: "React"
+          },
+          {
+            icon: SiNextdotjs,
+            label: "Next.js"
+          },
+          {
             icon: SiTypescript,
             label: "TypeScript"
           },
@@ -156,6 +165,27 @@ export const projects = [
         ],
     },
     {
+        title: "Ion Motion Simulation",
+        description: "This project provides Python functions for calculating and simulating ion motion in a linear ion trap.",
+        github: "https://github.com/godbehere/ion_motion",
+        demo: "https://github.com/godbehere/ion_motion/blob/master/Ion%20Motion.ipynb",
+        // tech: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+        tech: [
+          {
+            icon: SiPython,
+            label: "Python"
+          },
+        {
+            icon: SiNumpy,
+            label: "NumPy"
+          },
+          {
+            icon: SlGraph,
+            label: "Matplotlib"
+          },
+        ],
+    },
+    {
         title: "Professional Portfolio",
         description: "Modern, responsive portfolio site showcasing my projects and skills.",
         github: "https://github.com/godbehere/professional-portfolio",
@@ -163,8 +193,12 @@ export const projects = [
         // tech: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
         tech: [
           {
-            icon: SiTypescript,
-            label: "TypeScript"
+            icon: SiReact,
+            label: "React"
+          },
+        {
+            icon: SiNextdotjs,
+            label: "Next.js"
           },
           {
             icon: SiNodedotjs,
