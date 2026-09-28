@@ -7,12 +7,16 @@ import { projects } from '@/app/lib/data';
 export default function ProjectCards() {
   return (
     <section className="py-16 px-4 max-w-6xl mx-auto">
-      <div className="text-center mb-12">
+      <motion.div
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4">Projects</h1>
         <p className="text-lg text-gray-600 dark:text-gray-300">
           A selection of projects I’ve built or contributed to recently.
         </p>
-      </div>
+      </motion.div>
 
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
