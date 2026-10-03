@@ -1,7 +1,7 @@
 "use client";
 import { ExternalLink } from 'lucide-react';
 import { SiGithub } from 'react-icons/si';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { projects } from '@/app/lib/data';
 
 export default function ProjectCards() {

@@ -3,7 +3,7 @@ import ProjectCards from '@/components/ProjectCards';
 
 export const metadata: Metadata = {
   title: 'Projects | Grant Godbehere',
-  description: 'A collection of projects by Grant Godbehere.',
+  description: 'Personal and professional projects by Grant Godbehere — including AI/LLM tooling, RAG systems, and full-stack web applications.',
 };
 
 export default function ProjectsPage() {

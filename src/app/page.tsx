@@ -7,8 +7,8 @@ import { Metadata } from 'next';
 import LandingPage from '@/components/LandingPage';
 
 export const metadata: Metadata = {
-  title: 'Grant Godbehere | Software Engineering Leader',
-  description: 'Portfolio homepage for Grant Godbehere — engineering leader and software developer.',
+  title: 'Grant Godbehere | Full Stack Engineer',
+  description: 'Portfolio of Grant Godbehere — Full Stack Software Engineer specializing in AI-powered platforms, multi-service architecture, and LLM tooling.',
 };
 
 export default function HomePage() {

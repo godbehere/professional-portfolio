@@ -1,29 +1,37 @@
+import PrintButton from '@/components/PrintButton';
+import ResumeDocument from '@/components/ResumeDocument';
 import ResumeTimeline from '@/components/ResumeTimeline';
 import { Metadata } from 'next';
-import React from 'react';
 
 export const metadata: Metadata = {
   title: 'Resume | Grant Godbehere',
-  description: 'Download and view Grant Godbehere’s resume.',
+  description: 'Resume and career timeline for Grant Godbehere, Full Stack Software Engineer.',
 };
 
 export default function ResumePage() {
   return (
-    <section className="py-16">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-6">Resume</h1>
-        <p className="mb-8 text-lg">You can view or download my resume below:</p>
-        <a
-          href="/resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block px-6 py-3 bg-accent dark:text-white font-semibold rounded-lg hover:bg-accent/80 transition"
-        >
-          Download PDF
-        </a>
+    <>
+      {/* Page title and print button — hidden when printing */}
+      <div className="no-print text-center py-10 px-4">
+        <h1 className="text-4xl font-bold mb-4">Resume</h1>
+        <p className="text-muted mb-6">Print or save as PDF using your browser&apos;s print dialog.</p>
+        <PrintButton />
       </div>
 
-      <ResumeTimeline />
-    </section>
+      {/* Resume document — the only thing that prints */}
+      <div className="px-4 pb-12">
+        <ResumeDocument />
+      </div>
+
+      {/* Timeline — hidden when printing */}
+      <div className="no-print">
+        <div className="max-w-3xl mx-auto px-4 mb-4">
+          <hr className="border-gray-200 dark:border-gray-700" />
+          <h2 className="text-2xl font-semibold mt-10 mb-2">Full Career Timeline</h2>
+          <p className="text-muted text-sm">The expandable timeline below includes additional detail for each role.</p>
+        </div>
+        <ResumeTimeline />
+      </div>
+    </>
   );
 }

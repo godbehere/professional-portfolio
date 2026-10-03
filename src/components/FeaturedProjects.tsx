@@ -1,6 +1,6 @@
 "use client";
 import { projects } from '@/app/lib/data';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import Link from 'next/link';
 
 const featuredProjects = projects.slice(0, 3);

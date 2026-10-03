@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { timeline } from '@/app/lib/data';
 // import { Briefcase, GraduationCap } from 'lucide-react';
 

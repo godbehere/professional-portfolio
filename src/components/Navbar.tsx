@@ -1,5 +1,5 @@
 'use client'
-import { HatGlasses, Menu } from 'lucide-react';
+import { Code2, Menu } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -8,15 +8,14 @@ export default function Navbar() {
     return (
         <nav className="bg-gray-100 dark:bg-gray-accent shadow-md">
             <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-                <span className="text-xl font-bold flex items-center gap-2">
-                    <HatGlasses className="w-6 h-6" />
-                    <span className="hidden sm:inline">
-                        <Link href="/">Software Engineer - Lead Developer</Link>
+                <Link href="/" className="flex items-center gap-3">
+                    <Code2 className="w-6 h-6 text-accent shrink-0" />
+                    <span className="flex flex-col">
+                        <span className="text-base font-bold leading-tight">Grant Godbehere</span>
+                        <span className="text-xs text-muted font-normal leading-tight hidden sm:block">Full Stack Engineer | AI-Powered Platforms</span>
+                        <span className="text-xs text-muted font-normal leading-tight sm:hidden">Full Stack Engineer</span>
                     </span>
-                    <span className="sm:hidden">
-                        <Link href="/">Lead Dev</Link>
-                    </span>
-                </span>
+                </Link>
                 {/* Desktop links */}
                 <div className="space-x-4 hidden sm:flex">
                     <Link href="/">Home</Link>

@@ -1,13 +1,29 @@
 import { BrainCircuit, Briefcase, GraduationCap } from "lucide-react";
 import { HiCommandLine } from "react-icons/hi2";
 import { RiAnthropicFill, RiFirebaseFill } from "react-icons/ri";
-import { SiAxios, SiDocker, SiNextdotjs, SiNodedotjs, SiNumpy, SiOpenai, SiPython, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiAxios, SiDocker, SiNextdotjs, SiNodedotjs, SiNumpy, SiOpenai, SiPostgresql, SiPython, SiReact, SiRedis, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { SlGraph } from "react-icons/sl";
 
 export const timeline = [
   {
+    title: 'Full Stack Software Engineer @ Over99',
+    date: 'December 2025 - Present',
+    description: 'Building multi-service platforms and AI-powered tooling for a real-time gaming platform.',
+    icon: <Briefcase className="w-5 h-5 text-accent" />,
+    details: [
+      'Designed and shipped a new admin platform from scratch across four simultaneous production service launches: Google Workspace SSO auth API (RS256 JWT, PKCE, atomic refresh token rotation), a Model Context Protocol server with 30+ data tools and scope-filtered tool registration, an LLM orchestration backend (Anthropic Claude, SSE streaming), and a React SPA with an AI-powered chat interface — deployed to AWS ECS Fargate via Cloudflare Tunnel with zero public internet exposure.',
+      'Designed an AI-powered natural language query system: integrated Anthropic Claude with a custom MCP server; implemented auto-pagination, cross-turn context chaining, and ID hallucination prevention via system prompt hardening. Grew the toolset from 19 to 30+ tools covering casino, sportsbook, NGR, player cohorts, and wager reports.',
+      'Built a full Account Manager workspace spanning four services: player management with bulk data batching (replacing N+1 fan-out), notes and reminders, churn and potential scoring, activity heatmaps, transaction drilldowns, and platform-wide audit logging.',
+      'Implemented zero-trust JWT permission architecture with DB-driven scopes (service:permission:resource format), JWKS-based downstream validation, scope-filtered MCP tool registration, and a Permissions UI backed by a scope_registry table.',
+      'Delivered the Wager Bonus product end-to-end across five repositories: DB schema, claim logic with grace period handling, admin controls, and a user-facing VIP center with countdown timers.',
+      'Designed and implemented the User Status Match service — period-based VIP status tracking migrated across all services with transactional safety; added an Intercom integration endpoint for external VIP status triggers.',
+      'Rebuilt the admin panel with versioned API architecture (v2/v3), migrated user statistics to an external microservice, and delivered game statistics analytics with date filtering, CSV exports, and per-user drill-down views.',
+      'Led mobile-first consumer app navigation redesign through 14+ iterative releases; delivered the Nations/World Cup promotional feature across multiple services.',
+    ]
+  },
+  {
     title: 'Lead Developer @ TD Bank',
-    date: 'April 2022 - Present',
+    date: 'April 2022 - November 2025',
     description: 'Leading API development and contributing to scalable banking solutions.',
     icon: <Briefcase className="w-5 h-5 text-accent" />,
     details: [
@@ -64,6 +80,18 @@ export const timeline = [
 ];
 
 export const projects = [
+    {
+        title: "Over99 Admin Platform",
+        description: "New admin platform built from scratch across four production services: Google SSO auth, MCP tooling server with 30+ data tools, LLM orchestration backend with SSE streaming, and a React SPA with an AI-powered chat interface. Deployed on AWS ECS Fargate via Cloudflare Tunnel.",
+        tech: [
+          { icon: SiTypescript, label: "TypeScript" },
+          { icon: SiNodedotjs, label: "Node.js" },
+          { icon: SiReact, label: "React" },
+          { icon: RiAnthropicFill, label: "Anthropic" },
+          { icon: SiPostgresql, label: "PostgreSQL" },
+          { icon: SiRedis, label: "Redis" },
+        ],
+    },
     {
         title: "RAG Project",
         description: "A Retrieval-Augmented Generation (RAG) backend for document ingestion, semantic search, and LLM-powered question answering.",
