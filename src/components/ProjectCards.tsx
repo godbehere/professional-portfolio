@@ -39,7 +39,7 @@ export default function ProjectCards() {
                 {project.tech.map((tag, idx) => (
                   <span
                     key={idx}
-                    className="flex flex-col items-center text-2xl px-2 py-1 text-accent-pop"
+                    className="flex flex-col items-center text-2xl px-2 py-1 text-accent"
                     title={tag.label}
                     style={{ cursor: "default" }}
                   >

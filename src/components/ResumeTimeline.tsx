@@ -27,7 +27,7 @@ export default function ResumePage() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="absolute -left-8.5 mt-1.5 flex items-center justify-center w-6 h-6 bg-accent rounded-full">
+              <div className="absolute -left-8.5 mt-1.5 flex items-center justify-center w-6 h-6 bg-background rounded-full">
                 {item.icon}
               </div>
               <time className="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-400">

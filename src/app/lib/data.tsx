@@ -9,7 +9,7 @@ export const timeline = [
     title: 'Full Stack Software Engineer @ Over99',
     date: 'December 2025 - Present',
     description: 'Building multi-service platforms and AI-powered tooling for a real-time gaming platform.',
-    icon: <Briefcase className="w-5 h-5 text-accent" />,
+    icon: <Briefcase className="w-5 h-5 text-white" />,
     details: [
       'Designed and shipped a new admin platform from scratch across four simultaneous production service launches: Google Workspace SSO auth API (RS256 JWT, PKCE, atomic refresh token rotation), a Model Context Protocol server with 30+ data tools and scope-filtered tool registration, an LLM orchestration backend (Anthropic Claude, SSE streaming), and a React SPA with an AI-powered chat interface — deployed to AWS ECS Fargate via Cloudflare Tunnel with zero public internet exposure.',
       'Designed an AI-powered natural language query system: integrated Anthropic Claude with a custom MCP server; implemented auto-pagination, cross-turn context chaining, and ID hallucination prevention via system prompt hardening. Grew the toolset from 19 to 30+ tools covering casino, sportsbook, NGR, player cohorts, and wager reports.',
@@ -25,7 +25,7 @@ export const timeline = [
     title: 'Lead Developer @ TD Bank',
     date: 'April 2022 - November 2025',
     description: 'Leading API development and contributing to scalable banking solutions.',
-    icon: <Briefcase className="w-5 h-5 text-accent" />,
+    icon: <Briefcase className="w-5 h-5 text-white" />,
     details: [
       'Lead cross-functional teams in gathering and defining API requirements, ensuring seamless collaboration and optimal integration between frontend and backend systems while mentoring team members on best practices.',
       'Oversee the design, development, and maintenance of robust and scalable NodeJS and Java APIs, guiding the team in applying secure coding principles to deliver high-quality solutions.',
@@ -40,7 +40,7 @@ export const timeline = [
     title: 'Breadboard Build Lead – Mechanical Technologist @ Sciex',
     date: 'January 2018 - December 2021',
     description: 'Led a multidisciplinary team in the development of complex scientific instruments.',
-    icon: <Briefcase className="w-5 h-5 text-accent" />,
+    icon: <Briefcase className="w-5 h-5 text-white" />,
     details: [
       'Led a multidisciplinary team as Breadboard Build Lead, coordinating efforts to develop the Instrument Logbook & Configuration Application. This initiative not only resulted in significant time savings and minimized configuration errors but also fostered a collaborative environment that encouraged team members to share insights and best practices.',
       'Oversaw and mentored team members in troubleshooting complex mechanical and electrical issues, facilitating knowledge transfer and ensuring effective problem-solving across the group.',
@@ -52,19 +52,19 @@ export const timeline = [
     title: 'Application Designer @ StackTeck Systems Ltd.',
     date: 'September 2016 - January 2018',
     description: 'Developed plastic parts for injection molding machines.',
-    icon: <Briefcase className="w-5 h-5 text-accent" />,
+    icon: <Briefcase className="w-5 h-5 text-white" />,
   },
   {
     title: 'Junior Designer @ Intex Tooling Technologies',
     date: 'April 2015 - May 2016',
     description: 'Injection mold tooling design.',
-    icon: <Briefcase className="w-5 h-5 text-accent" />,
+    icon: <Briefcase className="w-5 h-5 text-white" />,
   },
   {
     title: 'Mechanical Engineering Technology Diploma',
     date: 'September 2012 - June 2015',
     description: 'Durham College',
-    icon: <GraduationCap className="w-5 h-5 text-accent" />,
+    icon: <GraduationCap className="w-5 h-5 text-white" />,
     details: [
       'Ontario Power Generation Scholarship for highest GPA - 2013',
       'Ontario Power Generation Scholarship for highest GPA - 2014',
@@ -75,7 +75,7 @@ export const timeline = [
     title: 'Opto-Mechanical Assembly Technician @ L-3 WESCAM',
     date: 'January 2011 - August 2013',
     description: 'Injection mold tooling design.',
-    icon: <Briefcase className="w-5 h-5 text-accent" />,
+    icon: <Briefcase className="w-5 h-5 text-white" />,
   },
 ];
 
